@@ -121,6 +121,60 @@
                       Navigate(Screen1,ScreenTransition.Fade);
 
 
+## Build Power Automate Flow:
+  - Login to Power Automate.
+  - Create a New Automated Cloud Flow. 
+  - Give a name and choose flow’s trigger as “When a blob is added or modified”. (Hint : Just type blob in the search). Create the first 2 steps in the workflow as shown below.
+    ### Note : Storage account name will be the name of the Storage Account created in the Azure Portal.
+  - Create Step3 as below: Choose Dynamic Content → File Content
+  - Step 4 and Step 5:
+
+    - These steps are to split the file name that is uploaded in the Blob Container.
+    - Step 4 takes Text: Display Name , Search Text :  ‘.’ 
+    - Step 5 takes Text: Display Name,starting position: 0 and Length: Text Position(output of Step4)
+    - Step 6:
+      - Type MongoDB and then choose the DataAPI created and choose Find
+      - Document as an Action. Enter all the details as below:
+      ### Note : _id will be the output of the previous step(Substring)
+    - Step 7:
+         - Type Parse JSON.
+         - Content : output of the Find Operation.
+         - Schema→ Generate from sample
+         - Paste the JSON output of the previous step and click Done.For Example: 
+                            {
+                             "document": {
+                               "_id": "N1242853",
+                               "firstname": "KOPAL",
+                               "lastname": "GUPTA",
+                               "DateOfBirth": "1986-06-10",
+                               "passportNumber": "N1242853",
+                               "emailId": "xxxxx@xxx.com"
+                             }
+     - Step 8:
+        - Type Condition.Choose a Value -> Add each field of the Parse JSON output and compare with the AI Model output(Extract information from Identity Documents)
+        - If Yes/No:
+          - Add an Action → Type Gmail →Send email.
+          - Add content as below:
+        This is the final look of of Power Automate Workflow:
+        
+# Execution
+
+  - 1: Click on the Application created in Power Apps.
+  - 2: Enter the User Details in the form.
+  - 3: Upload the Passport document.
+  - 4: Click on Submit, wait for the Success Message.
+  - 5: Go to the Atlas collection, there should be an entry made with the details entered in the form.
+  - 6: Go to Azure Blob Storage, it must have the file that is uploaded through the Power Apps.
+  - 7: Go to Power Automate, Wait for the trigger to get started.(usually takes 1-2 minutes to start the flow).
+  - 8: Wait for the flow to complete. If the form details matches with the uploaded document.You should receive a mail saying Validation is Successful. Else you should receive a Validation failure email.
+
+
+
+
+
+
+
+
 
 
 
