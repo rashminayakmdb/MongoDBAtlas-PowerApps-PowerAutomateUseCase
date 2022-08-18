@@ -33,3 +33,6 @@
 ## 3: Create Custom Connector
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to Import from Github.
+  - Change the name of the connector as per your “XYZBankDataAPI”
+  - Toggle the “Swagger Editor” button which will show the swagger code for the connector.We have to do InsertOne and FindOne operation as part of the use case and we would need the parameters to be set here in the swagger file for the app to pick them directly from the connector.
+
