@@ -1,9 +1,9 @@
 # MongoDB-PowerAppsPowerAutomateUseCase
 
-Setup
-1: MongoDB cluster Setup
+# Setup
+## 1: MongoDB cluster Setup
 
-1. Configure Atlas Environment
+### Configure Atlas Environment
 
 Log-on to Atlas account.
 In the project's Security tab, choose to add a new user called main_user, for this user select Add Default Privileges and in the Default Privileges section add the roles readWriteAnyDatabase.
