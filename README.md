@@ -109,6 +109,16 @@
             - Click on the Button created→ choose OnSelect Option → Add this function:
 
                   Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
+                  
+     - ### Screen2:
+        - Create a New Screen.
+            - Add a Label and enter the text as: “Your details are successfully submitted".
+            - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot.When the Cancel button is clicked, We need to reset the fields entered in the Screen1 and navigate back to the Screen1.
+
+            - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
+
+                      Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
+                      Navigate(Screen1,ScreenTransition.Fade);
 
 
 
