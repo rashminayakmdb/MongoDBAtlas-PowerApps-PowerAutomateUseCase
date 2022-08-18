@@ -63,4 +63,16 @@
            
            <img width="512" alt="FindOne" src="https://user-images.githubusercontent.com/101181433/185377096-6f5bf616-440c-4769-a33d-ee405eeaaa96.png">
 
+   - Update the connector.
+   - Go to Test Tab → New Connection. Enter the private API Key created in Generate an API key step.
+   - This connection created will show up in the Dataverse→Connections in the Left Panel of Power Apps portal.
+   
+## 4: Build Power Apps Onboarding form
+  - Go to Apps in the left panel or Power Apps Portal.
+  - Create a new Canvas app. Give a name, choose Tablet Mode.
+  - Add data source 
+    - ### Blob Storage
+      - Type Blob Storage → Add a connection. Enter the Azure storage account Name and Azure storage account Access Key(Get it from the Azure Portal where the storage container is created). Click Connect.
+
+
 
