@@ -147,16 +147,18 @@
          - Type Parse JSON.
          - Content : output of the Find Operation.
          - Schema→ Generate from sample
-         - Paste the JSON output of the previous step and click Done.For Example: 
-                            {
-                             "document": {
-                               "_id": "N1242853",
-                               "firstname": "KOPAL",
-                               "lastname": "GUPTA",
-                               "DateOfBirth": "1986-06-10",
-                               "passportNumber": "N1242853",
-                               "emailId": "xxxxx@xxx.com"
-                             }
+         - Paste the JSON output of the previous step and click Done.For Example:
+         
+                                          {
+                                           "document": {
+                                             "_id": "N1242853",
+                                             "firstname": "KOPAL",
+                                             "lastname": "GUPTA",
+                                             "DateOfBirth": "1986-06-10",
+                                             "passportNumber": "N1242853",
+                                             "emailId": "xxxxx@xxx.com"
+                                           } 
+                                        
      - Step 8:
         - Type Condition.Choose a Value -> Add each field of the Parse JSON output and compare with the AI Model output(Extract information from Identity Documents)
         - If Yes/No:
