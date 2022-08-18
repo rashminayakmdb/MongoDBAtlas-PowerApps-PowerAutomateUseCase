@@ -48,7 +48,11 @@
 
 
      
-         It should look like this after update:
+          It should look like this after update:
+         
+          <img width="490" alt="InsertOne" src="https://user-images.githubusercontent.com/101181433/185377082-554db411-db96-4d8d-b45f-19e66c9742a0.png">
+
+
       - ### FindOne:
          - In the swagger file, go To /action/findOne path
          - Under Schema →properties→ filter→ properties, replace the name property with the below:
@@ -56,5 +60,7 @@
                   _id: {type: string, description: PassportNumber}	
 
            It should look like this after update:
+           
+           <img width="512" alt="FindOne" src="https://user-images.githubusercontent.com/101181433/185377096-6f5bf616-440c-4769-a33d-ee405eeaaa96.png">
 
 
