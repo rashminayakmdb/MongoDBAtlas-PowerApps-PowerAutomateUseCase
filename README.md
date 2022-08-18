@@ -124,9 +124,16 @@
                   Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
                   
      - ### Screen2:
+     
+        <img width="340" alt="Screen2" src="https://user-images.githubusercontent.com/101181433/185433956-145fb2e3-8535-4300-b47a-7522c815f4ba.png">
+        
         - Create a New Screen.
             - Add a Label and enter the text as: “Your details are successfully submitted".
             - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot.When the Cancel button is clicked, We need to reset the fields entered in the Screen1 and navigate back to the Screen1.
+            
+            
+            <img width="532" alt="CancelButton" src="https://user-images.githubusercontent.com/101181433/185433946-2794ae2e-ad47-4388-a41e-fc75e27668be.png">
+
 
             - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
 
