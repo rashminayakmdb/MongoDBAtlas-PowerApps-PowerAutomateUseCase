@@ -88,12 +88,18 @@
       1. To create a form which has all these below fields in the screenshot.
       2. To display a success message when the form is submitted successfully.
     - ### Screen1:
+   
+        <img width="429" alt="Screen1" src="https://user-images.githubusercontent.com/101181433/185433251-bd49989c-20ba-4f82-bc33-f14897047102.png">
+     
         - Heading and labels on the left. 
            - Click on Insert → Label and key in the name.
         - Input boxes on the right, 
            - Click on Insert → Text → Text Input.
            - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
             - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
+            
+            <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
+
            
          - ### Upload Button:
             - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
