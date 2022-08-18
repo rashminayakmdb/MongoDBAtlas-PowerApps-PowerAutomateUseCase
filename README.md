@@ -61,20 +61,25 @@
 
            It should look like this after update:
            
-           <img width="512" alt="FindOne" src="https://user-images.githubusercontent.com/101181433/185377096-6f5bf616-440c-4769-a33d-ee405eeaaa96.png">
+         - <img width="512" alt="FindOne" src="https://user-images.githubusercontent.com/101181433/185377096-6f5bf616-440c-4769-a33d-ee405eeaaa96.png">
 
    - Update the connector.
    - Go to Test Tab → New Connection. Enter the private API Key created in Generate an API key step.
-   <img width="1098" alt="testTab" src="https://user-images.githubusercontent.com/101181433/185431420-4ee47fbf-193d-40dd-8401-cfbe8e9ef61e.png">
+   
+   - <img width="1098" alt="testTab" src="https://user-images.githubusercontent.com/101181433/185431420-4ee47fbf-193d-40dd-8401-cfbe8e9ef61e.png">
 
    - This connection created will show up in the Dataverse→Connections in the Left Panel of Power Apps portal.
    
 ## 4: Build Power Apps Onboarding form
   - Go to Apps in the left panel or Power Apps Portal.
   - Create a new Canvas app. Give a name, choose Tablet Mode.
+   <img width="519" alt="TabletMode" src="https://user-images.githubusercontent.com/101181433/185431906-9bca0b70-4e25-4bd5-8d62-89ea4e426b6a.png">
+
   - ## Add data source 
     - ### Blob Storage
       - Type Blob Storage → Add a connection. Enter the Azure storage account Name and Azure storage account Access Key(Get it from the Azure Portal where the storage container is created). Click Connect.
+       <img width="209" alt="DataSource" src="https://user-images.githubusercontent.com/101181433/185431920-9a508684-c919-42d9-8de6-dcd83dcd2b65.png">
+
     - ### MongoDB DataAPI
       - Type MongoDB and you will see the connection you created with the Custom Connector.
 
