@@ -36,18 +36,25 @@
   - Change the name of the connector as per your “XYZBankDataAPI”
   - Toggle the “Swagger Editor” button which will show the swagger code for the connector.We have to do InsertOne and FindOne operation as part of the use case and we would need the parameters to be set here in the swagger file for the app to pick them directly from the connector.
       - ### InsertOne:  
-             - In the swagger file, go to /action/insertOne path.
-             - Under Schema →properties→ document→ properties, replace the name and age properties with the below:
+        - In the swagger file, go to /action/insertOne path.
+        - Under Schema →properties→ document→ properties, replace the name and age properties with the below:
 
-                  _id: {type: string, description: _id, title: PassportNumber}
-                       firstname: {type: string, description: firstname, title: firstname}
-                       lastname: {type: string, description: lastname, title: lastname}
-                       DateOfBirth: {type: string, format: date, description: DateOfBirth,title: DateOfBirth}
-                       passportNumber: {type: string, description: passportNumber, title:passportNumber}
-                       emailId: {type: string, description: emailId, title: emailId}
+                 _id: {type: string, description: _id, title: PassportNumber}
+                 firstname: {type: string, description: firstname, title: firstname}
+                 lastname: {type: string, description: lastname, title: lastname}
+                 DateOfBirth: {type: string, format: date, description: DateOfBirth,title: DateOfBirth}
+                 passportNumber: {type: string, description: passportNumber, title:passportNumber}
+                 emailId: {type: string, description: emailId, title: emailId}
 
 
      
-               It should look like this after update:
- 
+         It should look like this after update:
+      - ### FindOne:
+         - In the swagger file, go To /action/findOne path
+         - Under Schema →properties→ filter→ properties, replace the name property with the below:
+            
+                  _id: {type: string, description: PassportNumber}	
+
+           It should look like this after update:
+
 
