@@ -13,6 +13,7 @@ In the Security tab, add a new IP Whitelist for your laptop's current IP address
 In the left-hand Deployment menu, click to navigate to Data API.
 Slide the Data API Enabled toggle to ON for the cluster you're using for this PoV. Select Enable when prompted and wait for the deployment to complete:
 
+<img width="1287" alt="DataAPI" src="https://user-images.githubusercontent.com/101181433/185349961-ac6fb7eb-c78e-4bda-b6ba-3d10adfb6ac6.png">
 
 Copy your Data API App ID from the URL Endpoint as you will need it for Postman. In the above screenshot, data-qdcie is my App ID.
 3. Generate an API key
