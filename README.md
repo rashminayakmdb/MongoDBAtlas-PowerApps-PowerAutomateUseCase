@@ -65,6 +65,8 @@
 
    - Update the connector.
    - Go to Test Tab → New Connection. Enter the private API Key created in Generate an API key step.
+   <img width="1098" alt="testTab" src="https://user-images.githubusercontent.com/101181433/185431420-4ee47fbf-193d-40dd-8401-cfbe8e9ef61e.png">
+
    - This connection created will show up in the Dataverse→Connections in the Left Panel of Power Apps portal.
    
 ## 4: Build Power Apps Onboarding form
