@@ -70,9 +70,36 @@
 ## 4: Build Power Apps Onboarding form
   - Go to Apps in the left panel or Power Apps Portal.
   - Create a new Canvas app. Give a name, choose Tablet Mode.
-  - Add data source 
+  - ## Add data source 
     - ### Blob Storage
       - Type Blob Storage → Add a connection. Enter the Azure storage account Name and Azure storage account Access Key(Get it from the Azure Portal where the storage container is created). Click Connect.
+    - ### MongoDB DataAPI
+      - Type MongoDB and you will see the connection you created with the Custom Connector.
+
+  - ## Create the Form
+    - We need 2 screens 
+    - 1: To create a form which has all these below fields in the screenshot.
+    - 2: To display a success message when the form is submitted successfully.
+    - ### Screen1:
+        - Heading and labels on the left. 
+           - Click on Insert → Label and key in the name.
+        - Input boxes on the right, 
+           - Click on Insert → Text → Text Input.
+           - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
+            - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
+         - Upload Button:
+            - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
+            - Click on the Media Button created→ choose OnSelect Option → Add this function: 
+            
+                   AzureBlobStorage.CreateFile("filestoprocess",Concatenate(Passport.Text,".pdf"),Upload.Media); 
+                    
+                 - Filestoprocess →  Folder name in Blob Storage
+                 - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
+                 - Upload.Media → For Uploading the file.
+
+
+
+
 
 
 
