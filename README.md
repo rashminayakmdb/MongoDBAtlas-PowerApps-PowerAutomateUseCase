@@ -78,8 +78,8 @@
 
   - ## Create the Form
     - We need 2 screens 
-    - 1: To create a form which has all these below fields in the screenshot.
-    - 2: To display a success message when the form is submitted successfully.
+      1. To create a form which has all these below fields in the screenshot.
+      2. To display a success message when the form is submitted successfully.
     - ### Screen1:
         - Heading and labels on the left. 
            - Click on Insert → Label and key in the name.
@@ -158,15 +158,14 @@
         This is the final look of of Power Automate Workflow:
         
 # Execution
-
-  - 1: Click on the Application created in Power Apps.
-  - 2: Enter the User Details in the form.
-  - 3: Upload the Passport document.
-  - 4: Click on Submit, wait for the Success Message.
-  - 5: Go to the Atlas collection, there should be an entry made with the details entered in the form.
-  - 6: Go to Azure Blob Storage, it must have the file that is uploaded through the Power Apps.
-  - 7: Go to Power Automate, Wait for the trigger to get started.(usually takes 1-2 minutes to start the flow).
-  - 8: Wait for the flow to complete. If the form details matches with the uploaded document.You should receive a mail saying Validation is Successful. Else you should receive a Validation failure email.
+  1. Click on the Application created in Power Apps.
+  2. Enter the User Details in the form.
+  3. Upload the Passport document.
+  4. Click on Submit, wait for the Success Message.
+  5. Go to the Atlas collection, there should be an entry made with the details entered in the form.
+  6. Go to Azure Blob Storage, it must have the file that is uploaded through the Power Apps.
+  7. Go to Power Automate, Wait for the trigger to get started.(usually takes 1-2 minutes to start the flow).
+  8. Wait for the flow to complete. If the form details matches with the uploaded document.You should receive a mail saying Validation is Successful. Else you should receive a Validation failure email.
 
 
 
