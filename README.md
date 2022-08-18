@@ -26,5 +26,10 @@
    ### NOTE: This is the only time you can retrieve the full private key.
 
 ## 2: Create a Blob Storage:
-You can follow the steps provided in Microsoft Link.
-Create a container filestoprocess
+
+  - You can follow the steps provided in Microsoft Link.
+  - Create a container filestoprocess
+
+## 3: Create Custom Connector
+  - Login to Power Apps.
+  - Follow below 3 steps from screenshot to Import from Github.
