@@ -87,7 +87,8 @@
            - Click on Insert → Text → Text Input.
            - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
             - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
-         - Upload Button:
+           
+         - ### Upload Button:
             - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
             - Click on the Media Button created→ choose OnSelect Option → Add this function: 
             
@@ -96,6 +97,20 @@
                  - Filestoprocess →  Folder name in Blob Storage
                  - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
                  - Upload.Media → For Uploading the file.
+          - ### Submit Button:
+            - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on the Button created→ choose OnSelect Option → Add this function: 
+
+                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text}});
+                    Navigate(Screen2,ScreenTransition.Fade);
+
+         - ### Reset Button:
+           - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on the Button created→ choose OnSelect Option → Add this function:
+
+                  Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
+
+
 
 
 
