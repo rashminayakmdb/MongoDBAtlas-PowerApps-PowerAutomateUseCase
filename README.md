@@ -12,3 +12,13 @@ In the Security tab, add a new IP Whitelist for your laptop's current IP address
 2: Enable the Data API in Atlas
 In the left-hand Deployment menu, click to navigate to Data API.
 Slide the Data API Enabled toggle to ON for the cluster you're using for this PoV. Select Enable when prompted and wait for the deployment to complete:
+
+
+Copy your Data API App ID from the URL Endpoint as you will need it for Postman. In the above screenshot, data-qdcie is my App ID.
+3. Generate an API key
+Switch to the API Keys tab and click Generate API Key
+Give your API key an appropriate name then click the Generate API Key button.
+
+
+Copy the private API Key for use and safekeeping that is displayed once generated. 
+NOTE: This is the only time you can retrieve the full private key.
