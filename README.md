@@ -148,7 +148,7 @@
     <img width="306" alt="AutomatedCloudFlow" src="https://user-images.githubusercontent.com/101181433/185534239-7d7d8740-e2e9-4a43-a47a-2c74210e9f60.png">
     
   - Give a name and choose flow’s trigger as “When a blob is added or modified”. (Hint : Just type blob in the search). Create the first 2 steps in the workflow as shown below.
-    ### Note : Storage account name will be the name of the Storage Account created in the Azure Portal.
+    #### Note : Storage account name will be the name of the Storage Account created in the Azure Portal.
     
     <img width="418" alt="Step2" src="https://user-images.githubusercontent.com/101181433/185534234-3f90391a-1f9b-4aae-9625-abc7d98539b5.png">
     
@@ -167,7 +167,7 @@
     - Step 6:
       - Type MongoDB and then choose the DataAPI created and choose Find
       - Document as an Action. Enter all the details as below:
-      ### Note : _id will be the output of the previous step(Substring)
+      #### Note : _id will be the output of the previous step(Substring)
         
         <img width="373" alt="Step6" src="https://user-images.githubusercontent.com/101181433/185534568-c53390d9-f353-411a-8694-9fdd74fd128c.png">
         
