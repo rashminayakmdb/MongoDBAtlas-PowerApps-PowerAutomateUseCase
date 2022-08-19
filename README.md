@@ -143,19 +143,34 @@
 
 ## Build Power Automate Flow:
   - Login to Power Automate.
-  - Create a New Automated Cloud Flow. 
+  - Create a New Automated Cloud Flow.
+  
+    <img width="306" alt="AutomatedCloudFlow" src="https://user-images.githubusercontent.com/101181433/185534239-7d7d8740-e2e9-4a43-a47a-2c74210e9f60.png">
+    
   - Give a name and choose flow’s trigger as “When a blob is added or modified”. (Hint : Just type blob in the search). Create the first 2 steps in the workflow as shown below.
     ### Note : Storage account name will be the name of the Storage Account created in the Azure Portal.
+    
+    <img width="418" alt="Step2" src="https://user-images.githubusercontent.com/101181433/185534234-3f90391a-1f9b-4aae-9625-abc7d98539b5.png">
+    
   - Create Step3 as below: Choose Dynamic Content → File Content
+     
+     <img width="372" alt="Step3" src="https://user-images.githubusercontent.com/101181433/185534228-75e045a8-37ca-4401-b5ce-b2dde785d207.png">
+     
   - Step 4 and Step 5:
 
     - These steps are to split the file name that is uploaded in the Blob Container.
     - Step 4 takes Text: Display Name , Search Text :  ‘.’ 
     - Step 5 takes Text: Display Name,starting position: 0 and Length: Text Position(output of Step4)
+    
+      <img width="372" alt="Step4,5" src="https://user-images.githubusercontent.com/101181433/185534573-e0899d7e-8e51-4d7c-beab-c6d7dfc50493.png">
+      
     - Step 6:
       - Type MongoDB and then choose the DataAPI created and choose Find
       - Document as an Action. Enter all the details as below:
       ### Note : _id will be the output of the previous step(Substring)
+        
+        <img width="373" alt="Step6" src="https://user-images.githubusercontent.com/101181433/185534568-c53390d9-f353-411a-8694-9fdd74fd128c.png">
+        
     - Step 7:
          - Type Parse JSON.
          - Content : output of the Find Operation.
@@ -170,14 +185,25 @@
                                              "DateOfBirth": "1986-06-10",
                                              "passportNumber": "N1242853",
                                              "emailId": "xxxxx@xxx.com"
-                                           } 
+                                                       } 
+                                           }
+                                           
+             <img width="363" alt="Step7" src="https://user-images.githubusercontent.com/101181433/185534557-09ff018b-d8e2-4661-9a11-fb743d2df84b.png">
                                         
      - Step 8:
         - Type Condition.Choose a Value -> Add each field of the Parse JSON output and compare with the AI Model output(Extract information from Identity Documents)
+        
+        <img width="369" alt="Step8" src="https://user-images.githubusercontent.com/101181433/185534838-c1b96dbc-81b7-4eda-bf77-749d8b92bbad.png">
+        
         - If Yes/No:
           - Add an Action → Type Gmail →Send email.
           - Add content as below:
+          
+          <img width="585" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
+          
         This is the final look of of Power Automate Workflow:
+        
+        <img width="346" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
         
 # Execution
   1. Click on the Application created in Power Apps.
