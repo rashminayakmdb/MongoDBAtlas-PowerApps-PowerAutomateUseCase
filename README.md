@@ -1,4 +1,4 @@
-# MongoDB-PowerAppsPowerAutomateUseCase
+# MongoDB+PowerApps/PowerAutomateUseCase
 
 # Setup
 ## 1: MongoDB cluster Setup
