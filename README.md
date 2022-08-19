@@ -23,7 +23,7 @@
    - Switch to the API Keys tab and click Generate API Key.
    - Give your API key an appropriate name then click the Generate API Key button.
    - Copy the private API Key for use and safekeeping that is displayed once generated. 
-   ### NOTE: This is the only time you can retrieve the full private key.
+   ### Note: This is the only time you can retrieve the full private key.
 
 ## 2: Create a Blob Storage:
 
