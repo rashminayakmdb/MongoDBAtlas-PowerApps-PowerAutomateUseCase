@@ -32,7 +32,7 @@
 
 ## 3: Connect to MongoDB Standard connector
   - Login to Power Apps.
-  - Follow below 3 steps from screenshot to Import from Github.
+  - Follow below 3 steps from screenshot to use the MongoDB connector.
   
   <img width="198" alt="Screenshot 2022-09-13 at 11 20 37 AM" src="https://user-images.githubusercontent.com/101181433/189820464-764763cd-416e-4b22-aaa9-4b57bf26ecdb.png">
 
