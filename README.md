@@ -30,9 +30,14 @@
   - You can follow the steps provided in Microsoft Link.
   - Create a container filestoprocess
 
-## 3: Create Custom Connector
+## 3: Connect to MongoDB Standard connector
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to Import from Github.
+  
+  <img width="198" alt="Screenshot 2022-09-13 at 11 20 37 AM" src="https://user-images.githubusercontent.com/101181433/189820464-764763cd-416e-4b22-aaa9-4b57bf26ecdb.png">
+
+  <img width="523" alt="Screenshot 2022-09-13 at 11 21 56 AM" src="https://user-images.githubusercontent.com/101181433/189820367-163a162b-74b7-4ebe-a139-4aadcba8af8c.png">
+
   - Change the name of the connector as per your “XYZBankDataAPI”
   - Toggle the “Swagger Editor” button which will show the swagger code for the connector.We have to do InsertOne and FindOne operation as part of the use case and we would need the parameters to be set here in the swagger file for the app to pick them directly from the connector.
       - ### InsertOne:  
