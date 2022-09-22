@@ -2,7 +2,7 @@
 
 ## Description
 
-   #### This is one example on how MongoDB can be seamlessly integrated with Power Apps and Power Automate to quickly automate various use-cases.This use-case shows how easily a front end for the Customer Onboarding can be developed using Power Apps and the back end process of validating the uploaded proofs can be automated and triggered in real-time using Power Automate and this entire application can seamlessly integrate with MongoDB Atlas which stores the details entered by user on the front-end and also stores the results of the validation.
+   #### This use-case shows how easily a front end for the Customer Onboarding can be developed using Power Apps and the back end process of validating the uploaded proofs can be automated and triggered in real-time using Power Automate and this entire application can seamlessly integrate with MongoDB Atlas which stores the details entered by user on the front-end and also stores the results of the validation.
     
 ## Prerequisites
 
@@ -12,11 +12,11 @@
 
 ## Below are the High level steps followed for the setup:
 
-#### 1: MongoDB cluster Setup [Step 1](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#1-mongodb-cluster-setup)
-#### 2: Create a Blob Storage [Step 2](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#2-create-a-blob-storage)
-#### 3: Connect to MongoDB Standard connector [Step 3](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
-#### 4: Build Power Apps Onboarding form [Step 4](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
-#### 5: Build Power Automate Flow [Step 5](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#5-build-power-automate-flow)
+#### 1: [MongoDB cluster Setup](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#1-mongodb-cluster-setup)
+#### 2: [Create a Blob Storage](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#2-create-a-blob-storage)
+#### 3: [Connect to MongoDB Standard connector](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
+#### 4: [Build Power Apps Onboarding form](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
+#### 5: [Build Power Automate Flow](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#5-build-power-automate-flow)
 
 # Setup
 ## 1: MongoDB cluster Setup
