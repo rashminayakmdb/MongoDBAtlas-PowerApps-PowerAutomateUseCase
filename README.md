@@ -6,7 +6,7 @@
     
 ## Prerequisites
 
-  #### 1: MongoDB Atlas cluster [Login](https://account.mongodb.com/account/login)
+  #### 1: MongoDB Atlas cluster [here](#1:mongodb-cluster-setup)
   #### 2: Azure subscription to store the files uploaded in Blob storage.[Creae a Azure Account](https://azure.microsoft.com/en-in/free/)
   #### 3: Power Apps/Power Automate License [License](https://powerapps.microsoft.com/en-us/pricing/)
 
