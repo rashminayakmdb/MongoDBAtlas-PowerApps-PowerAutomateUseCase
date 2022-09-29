@@ -14,8 +14,8 @@
 
 #### 1: [MongoDB cluster Setup](#mongodb-cluster-setup)
 #### 2: [Create a Blob Storage](#create-a-blob-storage)
-#### 3: [Connect to MongoDB Standard connector](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
-#### 4: [Build Power Apps Onboarding form](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
+#### 3: [Connect to MongoDB Standard connector](#connect-to-mongoDB-standard-connector)
+#### 4: [Build Power Apps Onboarding form](#build-power-apps-onboarding-form)
 #### 5: [Build Power Automate Flow](#build-power-automate-flow)
 
 # Setup
@@ -48,7 +48,7 @@
   - You can follow the steps provided in [Microsoft Link](https://azure.microsoft.com/en-in/free/).
   - Create a container filestoprocess
 
-## 3: Connect to MongoDB Standard connector
+## Connect to MongoDB Standard connector
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to use the MongoDB connector.
   
@@ -93,7 +93,7 @@
 
    - This connection created will show up in the Dataverse→Connections in the Left Panel of Power Apps portal.
    
-## 4: Build Power Apps Onboarding form
+## Build Power Apps Onboarding form
   - Go to Apps in the left panel or Power Apps Portal.
   - Create a new Canvas app. Give a name, choose Tablet Mode.
    <img width="519" alt="TabletMode" src="https://user-images.githubusercontent.com/101181433/185431906-9bca0b70-4e25-4bd5-8d62-89ea4e426b6a.png">
@@ -164,7 +164,7 @@
                       Navigate(Screen1,ScreenTransition.Fade);
 
 
-## 5 Build Power Automate Flow
+## Build Power Automate Flow
   - Login to Power Automate.
   - Create a New Automated Cloud Flow.
   
