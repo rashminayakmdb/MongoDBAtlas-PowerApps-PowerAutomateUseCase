@@ -12,14 +12,14 @@
 
 ## Below are the High level steps followed for the setup:
 
-#### 1: [MongoDB cluster Setup](#1-mongodb-cluster-setup)
-#### 2: [Create a Blob Storage](#2-create-a-blob-storage)
+#### 1: [MongoDB cluster Setup](#mongodb-cluster-setup)
+#### 2: [Create a Blob Storage](#create-a-blob-storage)
 #### 3: [Connect to MongoDB Standard connector](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
 #### 4: [Build Power Apps Onboarding form](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
-#### 5: [Build Power Automate Flow](#5-build-power-automate-flow)
+#### 5: [Build Power Automate Flow](#build-power-automate-flow)
 
 # Setup
-## 1: MongoDB cluster Setup
+## MongoDB cluster Setup
 
 ### A: Configure Atlas Environment
 
@@ -43,7 +43,7 @@
    - Copy the private API Key for use and safekeeping that is displayed once generated. 
    ### Note: This is the only time you can retrieve the full private key.
 
-## 2: Create a Blob Storage
+## Create a Blob Storage
 
   - You can follow the steps provided in [Microsoft Link](https://azure.microsoft.com/en-in/free/).
   - Create a container filestoprocess
@@ -164,7 +164,7 @@
                       Navigate(Screen1,ScreenTransition.Fade);
 
 
-## 5: Build Power Automate Flow:
+## Build Power Automate Flow
   - Login to Power Automate.
   - Create a New Automated Cloud Flow.
   
