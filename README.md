@@ -43,7 +43,7 @@
    - Copy the private API Key for use and safekeeping that is displayed once generated. 
    ### Note: This is the only time you can retrieve the full private key.
 
-## 2: Create a Blob Storage:
+## 2: Create a Blob Storage
 
   - You can follow the steps provided in Microsoft Link.
   - Create a container filestoprocess
