@@ -12,7 +12,7 @@
 
 ## Below are the High level steps followed for the setup:
 
-#### 1: [MongoDB cluster Setup](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#1-mongodb-cluster-setup)
+#### 1: [MongoDB cluster Setup](#1-mongodb-cluster-setup)
 #### 2: [Create a Blob Storage](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#2-create-a-blob-storage)
 #### 3: [Connect to MongoDB Standard connector](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
 #### 4: [Build Power Apps Onboarding form](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
