@@ -16,7 +16,7 @@
 #### 2: [Create a Blob Storage](#2-create-a-blob-storage)
 #### 3: [Connect to MongoDB Standard connector](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#3-connect-to-mongodb-standard-connector)
 #### 4: [Build Power Apps Onboarding form](https://github.com/rashminayakmdb/MongoDBAtlas-PowerApps-PowerAutomateUseCase/edit/main/README.md#4-build-power-apps-onboarding-form)
-#### 5: [Build Power Automate Flow](##build-power-automate-flow)
+#### 5: [Build Power Automate Flow](##5-build-power-automate-flow)
 
 # Setup
 ## 1: MongoDB cluster Setup
