@@ -45,7 +45,7 @@
 
 ## 2: Create a Blob Storage
 
-  - You can follow the steps provided in Microsoft Link.
+  - You can follow the steps provided in [Microsoft Link](https://azure.microsoft.com/en-in/free/).
   - Create a container filestoprocess
 
 ## 3: Connect to MongoDB Standard connector
