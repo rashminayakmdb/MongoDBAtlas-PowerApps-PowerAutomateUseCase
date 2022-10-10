@@ -1,4 +1,4 @@
-# MongoDB+PowerApps/PowerAutomateUseCase
+# MongoDB+ Microsoft PowerApps/PowerAutomateUseCase
 
 ## Description
 
