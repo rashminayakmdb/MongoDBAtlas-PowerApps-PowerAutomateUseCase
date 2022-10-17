@@ -82,31 +82,31 @@
 
   - ## Create the Form
     - We need 7 screens 
-      1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
+     1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
       
          <img width="400" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
          
-      2. Clicking on New Application takes us to the below form to fill all the details.
+     2. Clicking on New Application takes us to the below form to fill all the details.
          
          <img width="450" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
-      3. Saving the form should display us saved successfully message on screen.
+     3. Saving the form should display us saved successfully message on screen.
          
          <img width="350" alt="Save Success" src="https://user-images.githubusercontent.com/101181433/196110685-ff4aae02-5102-4047-8b7f-d8da189559af.png">
          
-      4. Submitting the form should display us Submitted successfully message on screen.
+     4. Submitting the form should display us Submitted successfully message on screen.
          
          <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
          
-      5. If user chooses to open the existing form, it should ask the user to enter the Application Number.
+     5. If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
          <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
          
-      6. If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
+     6. If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
       
          <img width="400" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
-      7. If the application was already submitten, then it should be non editable. 
+     7. If the application was already submitten, then it should be non editable. 
       
          <img width="400" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
          
