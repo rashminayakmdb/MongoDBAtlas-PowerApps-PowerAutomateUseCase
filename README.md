@@ -135,16 +135,23 @@
             - Click on Insert → Button. Edit the text to “Submit”.
             - Click on the Button created→ choose OnSelect Option → Add this function: 
 
-                    If(IsBlank(Fname.Text) Or IsBlank(Lname.Text) Or IsBlank(DOB.Text) Or IsBlank(Passport.Text) Or IsBlank(email.Text) Or IsEmpty(collectTemp.FN),
-Set(popup,true),
-UpdateContext({_deleteFile:AzureBlobStorage.GetFileMetadataByPathV2("csg10032001f02ad0eb",Concatenate("documents/",Passport.Text,".pdf")).Id});
-AzureBlobStorage.CopyFile(Concatenate("documents/",Passport.Text,".pdf"),Concatenate("filestoprocess/",Passport.Text,".pdf"),{overwrite:true});
-AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
+                    If(IsBlank(Fname.Text) Or IsBlank(Lname.Text) Or IsBlank(DOB.Text) Or IsBlank(Passport.Text) 
+                    Or IsBlank(email.Text) Or IsEmpty(collectTemp.FN),Set(popup,true),
+                    UpdateContext({_deleteFile:AzureBlobStorage.GetFileMetadataByPathV2("csg10032001f02ad0eb",
+                    Concatenate("documents/",Passport.Text,".pdf")).Id});
+                   
+                    AzureBlobStorage.CopyFile(Concatenate("documents/",Passport.Text,".pdf"),
+                    Concatenate("filestoprocess/",Passport.Text,".pdf"),{overwrite:true});
+                    
+                    AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
 
-MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel.Text}});
+                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",      
+                    {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:
+                    {firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,
+                    _id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel.Text}});
 
-Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
-);
+                    Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
+                    );
 
 
 
@@ -173,9 +180,7 @@ Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
      7. If the application was already submitten, then it should be non editable. 
       
          <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
-         
-    - ### Screen1:
-                  
+                           
      - ### Save And Submit Screen:
         
         - Create a New Screen.
