@@ -223,20 +223,21 @@
      
      ### 4. Submit Screen:
      
-       Submitting the form should display us Submitted successfully message on screen.
+       Submitting the form should display us success message on screen.
        Create a New Screen similar to the Save Screen and change the text message accordingly.
          
         
        <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
          
-         
-     5. If user chooses to open the existing form, it should ask the user to enter the Application Number.
+     
+     ### 5. Get Application Screen:
+     If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
-         <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
+     <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
          
-         - Create a New Screen.
-           - Add a label and text field as shown in the screenshot. Close Button should navigate to the Welcome Screen just like we did for previous screens.
-           - Add a Submit button. Click on the Button created→ choose OnSelect Option → Add this function:  
+     - Create a New Screen.
+     - Add a label and text field as shown in the screenshot. Close Button should navigate to the Welcome Screen just like we did for previous screens.
+     - Add a Submit button. Click on the Button created→ choose OnSelect Option → Add this function:  
                   
                   If(Or(IsBlank(ApplNoEntered.Text),!IsNumeric(ApplNoEntered.Text)),Set(popup,true),
 
@@ -254,14 +255,15 @@
                   );
                   );
                   );
-         
-     6. If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
+     
+     ### 6. Edit Application Screen:
+     If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
       
-         <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
+     <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
-         - Create a New Screen.
-           - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application Screen.
-           - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
+     - Create a New Screen.
+     - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application Screen.
+     - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
            
                   varFormData.document.firstname
                   varFormData.document.lastname
@@ -269,7 +271,8 @@
                   varFormData.document.passportNumber
                   varFormData.document.emailId
                   varFormData.document.applicationNumber
-           - Click on the Save Button created→ choose OnSelect Option → Add this function:
+                  
+     - Click on the Save Button created→ choose OnSelect Option → Add this function:
            
                   MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",
                   {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",filter:
@@ -280,7 +283,7 @@
                   Navigate('Save success',ScreenTransition.Fade,{returnAppNumber:ApplNoLabel_1});
 
   
-           - Click on the Submit Button created→ choose OnSelect Option → Add this function:  
+     - Click on the Submit Button created→ choose OnSelect Option → Add this function:  
            
                   If(IsBlank(Fname_1.Text) Or IsBlank(Lname_1.Text) Or IsBlank(DOB_1.Text) Or IsBlank(Passport_1.Text) Or IsBlank(email_1.Text) Or                           IsEmpty(collectTemp.FN),
                   Set(popup,true),
