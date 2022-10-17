@@ -48,9 +48,9 @@
   - You can follow the steps provided in [Microsoft Link](https://azure.microsoft.com/en-in/free/).
   - Create a container filestoprocess
 
-## Connect to MongoDB Standard connector
+## Connect to MongoDB Custom connector
   - Login to Power Apps.
-  - Follow below 3 steps from screenshot to use the MongoDB connector.
+  - Follow below 3 steps from screenshot to use the MongoDB Custom connector.
   
 <img width="246" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196098516-69165d33-df96-4804-abd8-2dfe810e02cd.png">
 <img width="312" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
