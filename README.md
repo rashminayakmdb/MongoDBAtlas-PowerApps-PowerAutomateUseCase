@@ -198,7 +198,7 @@
           
           <img width="585" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
           
-          - The status of the application has to stored back in MongoDB. Under each Action (Yes/No) add a "update document" after the "Send email" Action.
+          - The status of the application has to stored back in MongoDB. Under each Action (Yes/No) add a "update document" after the "Send email" Action.For YES status should be "Valid" and for NO status should be "Invalid".
           
          <img width="638" alt="PAutomate_UpdateStatus" src="https://user-images.githubusercontent.com/101181433/196105022-a73cee64-f9cd-46df-b127-30d5a5d74c54.png">
          
