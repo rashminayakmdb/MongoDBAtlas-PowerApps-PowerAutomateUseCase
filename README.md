@@ -75,7 +75,8 @@
   - ## Add data source 
     - ### Blob Storage
       - Type Blob Storage → Add a connection. Enter the Azure storage account Name and Azure storage account Access Key(Get it from the Azure Portal where the storage container is created). Click Connect.
-       <img width="209" alt="DataSource" src="https://user-images.githubusercontent.com/101181433/185431920-9a508684-c919-42d9-8de6-dcd83dcd2b65.png">
+      
+        <img width="209" alt="DataSource" src="https://user-images.githubusercontent.com/101181433/185431920-9a508684-c919-42d9-8de6-dcd83dcd2b65.png">
 
     - ### MongoDB DataAPI
       - Type MongoDB and you will see the connection you created with the Custom Connector.
@@ -115,9 +116,9 @@
            - Click on Insert → Text → Text Input.
            - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
            - For the Application Number, we need to show the random number generated in the Welcome Page. So add a label set the Text as "ApplnoNew"(which is the variable we are passing from the Welcome Screen)
-            - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
+            - Rename the Labels,TextInputs and Buttons as shown in the below screenshot. This will be easier to identify the fields for the actions/functions we write for Buttons.
             
-            <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
+               <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
 
            
          - ### Upload Button:
@@ -212,7 +213,7 @@
          - Add a Label and enter the text as: “Your details are successfully saved".
          - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot. When the Cancel button is clicked, we need to reset the fields entered in the Welcome Screen and navigate back to the Welcome Screen.
             
-         <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
+           <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
 
 
             - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
