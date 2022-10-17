@@ -84,22 +84,22 @@
     - We need 7 screens 
      ### 1. Welcome Screen: 
      
-       User can Open a New Application or choose to Open an Existing Application saved earlier by providing the Application Number.
+     User can Open a New Application or choose to Open an Existing Application saved earlier by providing the Application Number.
       
-           <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
+     <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
          
-         - Create 2 Buttons by clicking on Insert-> Input-> Button.
-         - Click on the Button:
+     - Create 2 Buttons by clicking on Insert-> Input-> Button.
+     - Click on the Button:
          
-            - Change the name in the Text Property for both the buttons.
-            - Choose the Onselect property of "Open New Application" and add this function:
+         - Change the name in the Text Property for both the buttons.
+         - Choose the OnSelect property of "Open New Application" and add this function:
             
-                     Set(ApplNo,Text(RandBetween(1,9999)));
-                     Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
+                  Set(ApplNo,Text(RandBetween(1,9999)));
+                  Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
                      
-            - Choose the Onselect property of "Retrieve Existing Application" and add this function:
+         - Choose the OnSelect property of "Retrieve Existing Application" and add this function:
             
-                     Navigate(GetApplicationNumber,ScreenTransition.Fade);
+                  Navigate(GetApplicationNumber,ScreenTransition.Fade);
          
      ### 2. New Application Screen: 
      
