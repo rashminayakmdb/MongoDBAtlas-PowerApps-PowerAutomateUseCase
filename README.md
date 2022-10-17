@@ -124,11 +124,11 @@
                  - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
                  - Upload.Media → For Uploading the file.
 
-          - ### Add a gallery:
+          - ### Add a gallery to show the uploaded file:
           
              - Click on Gallery and select vertical
              - Choose the CollectTemp as the datasource(CollectTemp is the collection created during the Upload).
-             - For the title of the Gallery.Select Text and set it to
+             - For the title of the Gallery. Select Text and set it to
              
                      ThisItem.FN
                      
