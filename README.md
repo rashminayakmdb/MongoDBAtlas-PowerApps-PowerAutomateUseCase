@@ -52,11 +52,12 @@
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to use the MongoDB connector.
   
-  <img width="198" alt="Screenshot 2022-09-13 at 11 20 37 AM" src="https://user-images.githubusercontent.com/101181433/189820464-764763cd-416e-4b22-aaa9-4b57bf26ecdb.png">
+<img width="246" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196098516-69165d33-df96-4804-abd8-2dfe810e02cd.png">
+<img width="312" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
+<img width="634" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196098530-1cfcdba9-4493-48a6-8e74-05cfe8323194.png">
 
-  <img width="523" alt="Screenshot 2022-09-13 at 11 21 56 AM" src="https://user-images.githubusercontent.com/101181433/189820367-163a162b-74b7-4ebe-a139-4aadcba8af8c.png">
 
-  - Change the name of the connector as per your “XYZBankDataAPI”
+  - Change the name of the connector as per your choice
   - Toggle the “Swagger Editor” button which will show the swagger code for the connector.We have to do InsertOne and FindOne operation as part of the use case and we would need the parameters to be set here in the swagger file for the app to pick them directly from the connector.
       - ### InsertOne:  
         - In the swagger file, go to /action/insertOne path.
