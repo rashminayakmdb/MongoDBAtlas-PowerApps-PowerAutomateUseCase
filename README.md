@@ -90,14 +90,47 @@
          - Click on the Button:
             - Change the name in the Text Property for both the buttons.
             - Choose the Onselect property of "Open New Application" and add this function:
-                  Set(ApplNo,Text(RandBetween(1,9999)));
-                  Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
+                     Set(ApplNo,Text(RandBetween(1,9999)));
+                     Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
             - Choose the Onselect property of "Retrieve Existing Application" and add this function:
-                  Navigate(GetApplicationNumber,ScreenTransition.Fade);
+                     Navigate(GetApplicationNumber,ScreenTransition.Fade);
          
      2. Clicking on New Application takes us to the below form to fill all the details.
          
          <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
+         
+          - Heading and labels on the left. 
+           - Click on Insert → Label and key in the name.
+        - Input boxes on the right, 
+           - Click on Insert → Text → Text Input.
+           - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
+            - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
+            
+            <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
+
+           
+         - ### Upload Button:
+            - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
+            - Click on the Media Button created→ choose OnSelect Option → Add this function: 
+            
+                   Set(varAzureFile,AzureBlobStorage.CreateFile("documents",Concatenate(Passport.Text,".pdf"),Upload.Media));
+                   Collect(collectTemp,{FN:Upload.FileName,FL:"[Url of your blob storage container Eg: https://mystorageaccountname.blob.core.windows.net]" & varAzureFile.Path,FID:varAzureFile.Id});
+                    
+                 - Filestoprocess →  Folder name in Blob Storage
+                 - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
+                 - Upload.Media → For Uploading the file.
+          - ### Submit Button:
+            - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on the Button created→ choose OnSelect Option → Add this function: 
+
+                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text}});
+                    Navigate(Screen2,ScreenTransition.Fade);
+
+         - ### Reset Button:
+           - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on the Button created→ choose OnSelect Option → Add this function:
+
+                  Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
          
      3. Saving the form should display us saved successfully message on screen.
          
@@ -120,40 +153,6 @@
          <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
          
     - ### Screen1:
-        
-        <img width="429" alt="Screen1" src="https://user-images.githubusercontent.com/101181433/185433251-bd49989c-20ba-4f82-bc33-f14897047102.png">
-     
-        - Heading and labels on the left. 
-           - Click on Insert → Label and key in the name.
-        - Input boxes on the right, 
-           - Click on Insert → Text → Text Input.
-           - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
-            - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
-            
-            <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
-
-           
-         - ### Upload Button:
-            - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
-            - Click on the Media Button created→ choose OnSelect Option → Add this function: 
-            
-                   AzureBlobStorage.CreateFile("filestoprocess",Concatenate(Passport.Text,".pdf"),Upload.Media); 
-                    
-                 - Filestoprocess →  Folder name in Blob Storage
-                 - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
-                 - Upload.Media → For Uploading the file.
-          - ### Submit Button:
-            - Click on Insert → Button. Edit the text to “Submit”.
-            - Click on the Button created→ choose OnSelect Option → Add this function: 
-
-                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text}});
-                    Navigate(Screen2,ScreenTransition.Fade);
-
-         - ### Reset Button:
-           - Click on Insert → Button. Edit the text to “Submit”.
-            - Click on the Button created→ choose OnSelect Option → Add this function:
-
-                  Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
                   
      - ### Save And Submit Screen:
         
