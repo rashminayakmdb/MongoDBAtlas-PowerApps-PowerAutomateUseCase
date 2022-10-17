@@ -80,7 +80,7 @@
     - ### MongoDB DataAPI
       - Type MongoDB and you will see the connection you created with the Custom Connector.
 
-  - ## Create the Form
+  - ## Create the Forms
     - We need 7 screens 
      1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
       
