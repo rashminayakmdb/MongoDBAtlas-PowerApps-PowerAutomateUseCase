@@ -136,9 +136,9 @@
                      
              - Add the delete button from Insert-> Icons. Click on the Button created→ choose OnSelect Option → Add this function: 
                  
-                        Remove(collectTemp,ThisItem);
-                        AzureBlobStorage.DeleteFile(ThisItem.FID);
-                        Reset(Upload);
+                      Remove(collectTemp,ThisItem);
+                      AzureBlobStorage.DeleteFile(ThisItem.FID);
+                      Reset(Upload);
                  
           - ### Save Button:
             - Click on Insert → Button. Edit the text to “Save”.
