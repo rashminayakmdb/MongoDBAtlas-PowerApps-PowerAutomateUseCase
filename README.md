@@ -52,8 +52,8 @@
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to use the MongoDB Custom connector.
   
-<img width="150" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196098516-69165d33-df96-4804-abd8-2dfe810e02cd.png">
-<img width="300" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
+<img width="150" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196114084-020ec9e7-183b-4a03-9900-a0278e1b1a9a.png">
+<img width="200" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
 <img width="300" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196098530-1cfcdba9-4493-48a6-8e74-05cfe8323194.png">
 
 
