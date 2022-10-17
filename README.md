@@ -33,7 +33,7 @@
 
   - Slide the Data API Enabled toggle to ON for the cluster you're using for this PoV. Select Enable when prompted and wait for the deployment to complete:
 
-   <img width="1287" alt="DataAPI" src="https://user-images.githubusercontent.com/101181433/185349961-ac6fb7eb-c78e-4bda-b6ba-3d10adfb6ac6.png">
+   <img width="600" alt="DataAPI" src="https://user-images.githubusercontent.com/101181433/185349961-ac6fb7eb-c78e-4bda-b6ba-3d10adfb6ac6.png">
 
   - Copy your Data API App ID from the URL Endpoint as you will need it for Postman. In the above screenshot, data-qdcie is my App ID.
 ### C: Generate an API key
@@ -52,9 +52,9 @@
   - Login to Power Apps.
   - Follow below 3 steps from screenshot to use the MongoDB Custom connector.
   
-<img width="246" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196098516-69165d33-df96-4804-abd8-2dfe810e02cd.png">
-<img width="312" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
-<img width="634" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196098530-1cfcdba9-4493-48a6-8e74-05cfe8323194.png">
+<img width="150" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196098516-69165d33-df96-4804-abd8-2dfe810e02cd.png">
+<img width="300" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
+<img width="300" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196098530-1cfcdba9-4493-48a6-8e74-05cfe8323194.png">
 
 
   - Change the name of the connector as per your choice
@@ -63,14 +63,14 @@
    - Update the connector.
    - Go to Test Tab → New Connection. Enter the private API Key created in Generate an API key step.
    
- <img width="1098" alt="testTab" src="https://user-images.githubusercontent.com/101181433/185431420-4ee47fbf-193d-40dd-8401-cfbe8e9ef61e.png">
+ <img width="300" alt="testTab" src="https://user-images.githubusercontent.com/101181433/185431420-4ee47fbf-193d-40dd-8401-cfbe8e9ef61e.png">
 
    - This connection created will show up in the Dataverse→Connections in the Left Panel of Power Apps portal.
    
 ## Build Power Apps Onboarding form
   - Go to Apps in the left panel or Power Apps Portal.
   - Create a new Canvas app. Give a name, choose Tablet Mode.
-   <img width="519" alt="TabletMode" src="https://user-images.githubusercontent.com/101181433/185431906-9bca0b70-4e25-4bd5-8d62-89ea4e426b6a.png">
+   <img width="300" alt="TabletMode" src="https://user-images.githubusercontent.com/101181433/185431906-9bca0b70-4e25-4bd5-8d62-89ea4e426b6a.png">
 
   - ## Add data source 
     - ### Blob Storage
@@ -84,11 +84,11 @@
     - We need 7 screens 
      1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
       
-         <img width="400" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
+         <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
          
      2. Clicking on New Application takes us to the below form to fill all the details.
          
-         <img width="450" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
+         <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
      3. Saving the form should display us saved successfully message on screen.
          
@@ -104,11 +104,11 @@
          
      6. If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
       
-         <img width="400" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
+         <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
      7. If the application was already submitten, then it should be non editable. 
       
-         <img width="400" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
+         <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
          
     - ### Screen1:
         
@@ -168,16 +168,16 @@
   - Login to Power Automate.
   - Create a New Automated Cloud Flow.
   
-    <img width="306" alt="AutomatedCloudFlow" src="https://user-images.githubusercontent.com/101181433/185534239-7d7d8740-e2e9-4a43-a47a-2c74210e9f60.png">
+    <img width="300" alt="AutomatedCloudFlow" src="https://user-images.githubusercontent.com/101181433/185534239-7d7d8740-e2e9-4a43-a47a-2c74210e9f60.png">
     
   - Give a name and choose flow’s trigger as “When a blob is added or modified”. (Hint : Just type blob in the search). Create the first 2 steps in the workflow as shown below.
     #### Note : Storage account name will be the name of the Storage Account created in the Azure Portal.
     
-    <img width="418" alt="Step2" src="https://user-images.githubusercontent.com/101181433/185534234-3f90391a-1f9b-4aae-9625-abc7d98539b5.png">
+    <img width="300" alt="Step2" src="https://user-images.githubusercontent.com/101181433/185534234-3f90391a-1f9b-4aae-9625-abc7d98539b5.png">
     
   - Create Step3 as below: Choose Dynamic Content → File Content
      
-     <img width="372" alt="Step3" src="https://user-images.githubusercontent.com/101181433/185534228-75e045a8-37ca-4401-b5ce-b2dde785d207.png">
+     <img width="300" alt="Step3" src="https://user-images.githubusercontent.com/101181433/185534228-75e045a8-37ca-4401-b5ce-b2dde785d207.png">
      
   - Step 4 and Step 5:
 
@@ -185,14 +185,14 @@
     - Step 4 takes Text: Display Name , Search Text :  ‘.’ 
     - Step 5 takes Text: Display Name,starting position: 0 and Length: Text Position(output of Step4)
     
-      <img width="372" alt="Step4,5" src="https://user-images.githubusercontent.com/101181433/185534573-e0899d7e-8e51-4d7c-beab-c6d7dfc50493.png">
+      <img width="300" alt="Step4,5" src="https://user-images.githubusercontent.com/101181433/185534573-e0899d7e-8e51-4d7c-beab-c6d7dfc50493.png">
       
     - Step 6:
       - Type MongoDB and then choose the DataAPI created and choose Find
       - Document as an Action. Enter all the details as below:
       #### Note : _id will be the output of the previous step(Substring)
         
-        <img width="619" alt="PAutomate_findDocument" src="https://user-images.githubusercontent.com/101181433/196105643-9f205ae2-fa76-4611-9de6-41364fb70490.png">
+        <img width="300" alt="PAutomate_findDocument" src="https://user-images.githubusercontent.com/101181433/196105643-9f205ae2-fa76-4611-9de6-41364fb70490.png">
         
     - Step 7:
          - Type Parse JSON.
@@ -211,26 +211,26 @@
                                                        } 
                                            }
                                            
-             <img width="363" alt="Step7" src="https://user-images.githubusercontent.com/101181433/185534557-09ff018b-d8e2-4661-9a11-fb743d2df84b.png">
+             <img width="300" alt="Step7" src="https://user-images.githubusercontent.com/101181433/185534557-09ff018b-d8e2-4661-9a11-fb743d2df84b.png">
                                         
      - Step 8:
         - Type Condition.Choose a Value -> Add each field of the Parse JSON output and compare with the AI Model output(Extract information from Identity Documents)
         
-        <img width="369" alt="Step8" src="https://user-images.githubusercontent.com/101181433/185534838-c1b96dbc-81b7-4eda-bf77-749d8b92bbad.png">
+        <img width="300" alt="Step8" src="https://user-images.githubusercontent.com/101181433/185534838-c1b96dbc-81b7-4eda-bf77-749d8b92bbad.png">
         
         - If Yes/No:
           - Add an Action → Type Gmail →Send email.
           - Add mail content as per your choice:
           
-          <img width="585" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
+          <img width="450" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
           
           - The status of the application has to stored back in MongoDB. Under each Action (Yes/No) add a "update document" after the "Send email" Action.For YES status should be "Valid" and for NO status should be "Invalid".
           
-         <img width="638" alt="PAutomate_UpdateStatus" src="https://user-images.githubusercontent.com/101181433/196105022-a73cee64-f9cd-46df-b127-30d5a5d74c54.png">
+         <img width="300" alt="PAutomate_UpdateStatus" src="https://user-images.githubusercontent.com/101181433/196105022-a73cee64-f9cd-46df-b127-30d5a5d74c54.png">
          
         This is the final look of of Power Automate Workflow:
         
-        <img width="346" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
+        <img width="300" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
         
 # Execution
   1. Click on the Application created in Power Apps.
