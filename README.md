@@ -1,4 +1,4 @@
-# MongoDB Atlas + Microsoft PowerApps/PowerAutomateUseCase
+# MongoDB Atlas + Microsoft PowerApps/PowerAutomate
 
 ## Description
 
