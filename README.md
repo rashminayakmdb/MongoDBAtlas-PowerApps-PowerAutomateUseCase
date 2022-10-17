@@ -82,10 +82,13 @@
 
   - ## Create the Form
     - We need 2 screens 
-      1. To create a form which has all these below fields in the screenshot.
-      2. To display a success message when the form is submitted successfully.
+      1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
+         
+      2. To create a form which has all these below fields in the screenshot.
+      3. To display a success message when the form is submitted successfully.
     - ### Screen1:
-   
+        <img width="1284" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196106913-d0758e46-cb9d-4344-a573-9929c3fb30bc.png">
+        
         <img width="429" alt="Screen1" src="https://user-images.githubusercontent.com/101181433/185433251-bd49989c-20ba-4f82-bc33-f14897047102.png">
      
         - Heading and labels on the left. 
