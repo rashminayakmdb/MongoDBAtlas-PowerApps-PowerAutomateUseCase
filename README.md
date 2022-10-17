@@ -82,21 +82,28 @@
 
   - ## Create the Forms
     - We need 7 screens 
-     1. User can open a New Application or choose to open an existing application saved earlier by providing the application Number.
+     ### 1. Welcome Screen: 
+     
+       User can Open a New Application or choose to Open an Existing Application saved earlier by providing the Application Number.
       
-         <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
+           <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
          
          - Create 2 Buttons by clicking on Insert-> Input-> Button.
          - Click on the Button:
          
             - Change the name in the Text Property for both the buttons.
             - Choose the Onselect property of "Open New Application" and add this function:
+            
                      Set(ApplNo,Text(RandBetween(1,9999)));
                      Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
+                     
             - Choose the Onselect property of "Retrieve Existing Application" and add this function:
+            
                      Navigate(GetApplicationNumber,ScreenTransition.Fade);
          
-     2. Clicking on New Application takes us to the below form to fill all the details.
+     ### 2. New Application Screen: 
+     
+      Clicking on New Application takes us to the below form to fill all the details.
          
          <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
@@ -195,15 +202,17 @@
                      
               - Choose these 3(Rectangle+Label+Button) on the left panel, right click and group them
               
-     3. Saving the form should display us saved successfully message on screen.
+     ### 3. Save Screen:
+     
+       Saving the form should display us saved successfully message on screen.
          
-         <img width="350" alt="Save Success" src="https://user-images.githubusercontent.com/101181433/196110685-ff4aae02-5102-4047-8b7f-d8da189559af.png">
+       <img width="350" alt="Save Success" src="https://user-images.githubusercontent.com/101181433/196110685-ff4aae02-5102-4047-8b7f-d8da189559af.png">
          
-          - Create a New Screen.
-            - Add a Label and enter the text as: “Your details are successfully saved".
-            - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot.When the Cancel button is clicked, We need to reset the fields entered in the Screen1 and navigate back to the Screen1.
+       - Create a New Screen.
+         - Add a Label and enter the text as: “Your details are successfully saved".
+         - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot. When the Cancel button is clicked, we need to reset the fields entered in the Welcome Screen and navigate back to the Welcome Screen.
             
-            <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
+         <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
 
 
             - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
@@ -211,12 +220,15 @@
                       Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
                       Navigate('Welcome Screen',ScreenTransition.Fade);
 
+     
+     ### 4. Submit Screen:
+     
+       Submitting the form should display us Submitted successfully message on screen.
+       Create a New Screen similar to the Save Screen and change the text message accordingly.
          
-     4. Submitting the form should display us Submitted successfully message on screen.
+        
+       <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
          
-         <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
-         
-         - Create a New Screen similar to the Save Screen and change the text message accordingly.
          
      5. If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
