@@ -166,7 +166,7 @@
       - Document as an Action. Enter all the details as below:
       #### Note : _id will be the output of the previous step(Substring)
         
-        <img width="373" alt="Step6" src="https://user-images.githubusercontent.com/101181433/185534568-c53390d9-f353-411a-8694-9fdd74fd128c.png">
+        <img width="610" alt="PAutomate_findDocument" src="https://user-images.githubusercontent.com/101181433/196103520-2e836a49-9d54-4956-bcf4-ae832afc3849.png">
         
     - Step 7:
          - Type Parse JSON.
@@ -194,10 +194,12 @@
         
         - If Yes/No:
           - Add an Action → Type Gmail →Send email.
-          - Add content as below:
+          - Add mail content as per your choice:
           
           <img width="585" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
           
+          - The status of the application has to stored back in MongoDB. Under each Action (Yes/No) add a "update document" after the "Send email" Action.
+         
         This is the final look of of Power Automate Workflow:
         
         <img width="346" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
