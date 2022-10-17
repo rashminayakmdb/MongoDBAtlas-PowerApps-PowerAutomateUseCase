@@ -86,6 +86,15 @@
       
          <img width="300" alt="Welcome" src="https://user-images.githubusercontent.com/101181433/196109017-9c07440e-f021-40c4-bf55-871fb37e2064.png">
          
+         - Create 2 Buttons by clicking on Insert-> Input-> Button.
+         - Click on the Button:
+            - Change the name in the Text Property for both the buttons.
+            - Choose the Onselect property of "Open New Application" and add this function:
+                  Set(ApplNo,Text(RandBetween(1,9999)));
+                  Navigate('New Form',ScreenTransition.Fade,{ApplnoNew:ApplNo});
+            - Choose the Onselect property of "Retrieve Existing Application" and add this function:
+                  Navigate(GetApplicationNumber,ScreenTransition.Fade);
+         
      2. Clicking on New Application takes us to the below form to fill all the details.
          
          <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
