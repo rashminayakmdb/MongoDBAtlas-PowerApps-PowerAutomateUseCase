@@ -232,7 +232,15 @@
          <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
          - Create a New Screen.
-           - use the Similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the alreasy saved document.
+           - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.
+           - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
+           
+                  varFormData.document.firstname
+                  varFormData.document.lastname
+                  varFormData.document.DateOfBirth
+                  varFormData.document.passportNumber
+                  varFormData.document.emailId
+                  varFormData.document.applicationNumber
            - Click on the Save Button created→ choose OnSelect Option → Add this function:
            
                   MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",
