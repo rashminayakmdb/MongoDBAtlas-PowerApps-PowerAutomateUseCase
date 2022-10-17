@@ -110,6 +110,7 @@
 
            
          - ### Upload Button:
+         
             - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
             - Click on the Media Button created→ choose OnSelect Option → Add this function: 
             
@@ -119,9 +120,19 @@
                  - Filestoprocess →  Folder name in Blob Storage
                  - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
                  - Upload.Media → For Uploading the file.
+
+          - ### Add a gallery:
+          
+             - Click on Gallery and select vertical
+             - Choose the CollectTemp as the datasource(CollectTemp is the collection created during the Upload)
+             - Add the delete button from Insert-> Icons. Click on the Button created→ choose OnSelect Option → Add this function: 
+                 
+                        Remove(collectTemp,ThisItem);
+                        AzureBlobStorage.DeleteFile(ThisItem.FID);
+                        Reset(Upload);
                  
           - ### Save Button:
-            - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on Insert → Button. Edit the text to “Save”.
             - Click on the Button created→ choose OnSelect Option → Add this function: 
             
                      MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",
@@ -152,8 +163,6 @@
 
                     Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
                     );
-
-
 
          - ### Reset Button:
            - Click on Insert → Button. Edit the text to “Submit”.
