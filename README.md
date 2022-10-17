@@ -166,7 +166,7 @@
       - Document as an Action. Enter all the details as below:
       #### Note : _id will be the output of the previous step(Substring)
         
-        <img width="610" alt="PAutomate_findDocument" src="https://user-images.githubusercontent.com/101181433/196103520-2e836a49-9d54-4956-bcf4-ae832afc3849.png">
+        <img width="619" alt="PAutomate_findDocument" src="https://user-images.githubusercontent.com/101181433/196105643-9f205ae2-fa76-4611-9de6-41364fb70490.png">
         
     - Step 7:
          - Type Parse JSON.
