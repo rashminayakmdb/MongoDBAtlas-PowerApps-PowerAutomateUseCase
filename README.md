@@ -179,7 +179,8 @@
 
                   Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
                   
-            - We also need a popup window to stop the user if he is trying to Submit without entering all the details.
+          - ### Popup Window:
+              -  We also need a popup window to stop the user if he is trying to submit without entering all the details.
               - Click the form(anywere on the screen)-> Under the Advanced-> Action -> OnVisible, Add 
                   
                      Set(popup,false)
