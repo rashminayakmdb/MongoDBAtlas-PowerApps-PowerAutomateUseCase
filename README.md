@@ -302,14 +302,14 @@
                   );
 
 
-         
-     7. If the application was already submitten, then it should be non editable. 
+     ### 7. View Submitted Application Screen:    
+     If the application was already submitten, then it should be non editable. 
       
-         <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
+     <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
          
-          - Create a New Screen.
-            - Use the similar setup like the Edit Application Screen displaying all the retrieved values from varFormData. This screen should be non editable, so for the text inputs-> Properties->Display Mode-> Select View
-            - Add a new Label and text field for Displaying the Status of the Application
+     - Create a New Screen.
+     - Use the similar setup like the Edit Application Screen displaying all the retrieved values from varFormData. This screen should be non editable, so for the text inputs-> Properties->Display Mode-> Select View
+     - Add a new Label and text field for Displaying the Status of the Application
                           
 
 ## Build Power Automate Flow:
