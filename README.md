@@ -100,6 +100,7 @@
          
          <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
+          - Create a New Screen.
           - Heading and labels on the left. 
       
             - Click on Insert → Label and key in the name.
@@ -181,9 +182,24 @@
          
          <img width="350" alt="Save Success" src="https://user-images.githubusercontent.com/101181433/196110685-ff4aae02-5102-4047-8b7f-d8da189559af.png">
          
+          - Create a New Screen.
+            - Add a Label and enter the text as: “Your details are successfully saved".
+            - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot.When the Cancel button is clicked, We need to reset the fields entered in the Screen1 and navigate back to the Screen1.
+            
+            <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
+
+
+            - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
+
+                      Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
+                      Navigate('Welcome Screen',ScreenTransition.Fade);
+
+         
      4. Submitting the form should display us Submitted successfully message on screen.
          
          <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
+         
+         - Create a New Screen similar to the Save Screen and change the text message accordingly.
          
      5. If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
@@ -196,21 +212,7 @@
      7. If the application was already submitten, then it should be non editable. 
       
          <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
-                           
-     - ### Save And Submit Screen:
-        
-        - Create a New Screen.
-            - Add a Label and enter the text as: “Your details are successfully saved/submitted".
-            - Add the Check Icon and Cancel Icon from Icons dropdown as shown in the below screenshot.When the Cancel button is clicked, We need to reset the fields entered in the Screen1 and navigate back to the Screen1.
-            
-            <img width="200" alt="closeButton" src="https://user-images.githubusercontent.com/101181433/196126608-f58db919-b9fa-43ee-b289-2f11c252871c.png">
-
-
-            - Click on the Cancel Icon created→ choose OnSelect Option → Add this function:
-
-                      Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
-                      Navigate('Welcome Screen',ScreenTransition.Fade);
-
+                          
 
 ## Build Power Automate Flow:
   - Login to Power Automate.
