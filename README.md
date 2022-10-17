@@ -88,6 +88,7 @@
          
          - Create 2 Buttons by clicking on Insert-> Input-> Button.
          - Click on the Button:
+         
             - Change the name in the Text Property for both the buttons.
             - Choose the Onselect property of "Open New Application" and add this function:
                      Set(ApplNo,Text(RandBetween(1,9999)));
@@ -100,10 +101,12 @@
          <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
           - Heading and labels on the left. 
-           - Click on Insert → Label and key in the name.
+      
+            - Click on Insert → Label and key in the name.
         - Input boxes on the right, 
            - Click on Insert → Text → Text Input.
            - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
+           - For the Application Number, we need to show the random number generated in the Welcome Page. So add a label set the Text as "ApplnoNew"(which is the variable we are passing from the Welcome Screen)
             - Rename the Labels,TextInputs and Buttons as shown in the below screenshot.This will be easier to identify the fields for the actions/functions we write for Buttons.
             
             <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
@@ -124,7 +127,11 @@
           - ### Add a gallery:
           
              - Click on Gallery and select vertical
-             - Choose the CollectTemp as the datasource(CollectTemp is the collection created during the Upload)
+             - Choose the CollectTemp as the datasource(CollectTemp is the collection created during the Upload).
+             - For the title of the Gallery.Select Text and set it to
+             
+                     ThisItem.FN
+                     
              - Add the delete button from Insert-> Icons. Click on the Button created→ choose OnSelect Option → Add this function: 
                  
                         Remove(collectTemp,ThisItem);
