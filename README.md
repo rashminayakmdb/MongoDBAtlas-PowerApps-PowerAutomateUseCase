@@ -230,6 +230,39 @@
       
          <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
+         - Create a New Screen.
+           - use the Similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the alreasy saved document.
+           - Click on the Save Button created→ choose OnSelect Option → Add this function:
+           
+                  MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",
+                  {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",filter:
+                  {applicationNumber:ApplNoLabel_1.Text,passportNumber:Blank()},update:{'$set':
+                  {firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),DateOfBirth:DOB_1.Text,
+                  passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
+
+                  Navigate('Save success',ScreenTransition.Fade,{returnAppNumber:ApplNoLabel_1});
+
+  
+           - Click on the Submit Button created→ choose OnSelect Option → Add this function:  
+           
+                  If(IsBlank(Fname_1.Text) Or IsBlank(Lname_1.Text) Or IsBlank(DOB_1.Text) Or IsBlank(Passport_1.Text) Or IsBlank(email_1.Text) Or                           IsEmpty(collectTemp.FN),
+                  Set(popup,true),
+                  UpdateContext({_deleteFile:AzureBlobStorage.GetFileMetadataByPathV2("csg10032001f02ad0eb",
+                  Concatenate("documents/",Passport_1.Text,".pdf")).Id});
+
+                  AzureBlobStorage.CopyFile(Concatenate("documents/",Passport_1.Text,".pdf"),Concatenate("filestoprocess/",Passport_1.Text,".pdf"));
+                  AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
+
+                  MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",
+                  database:"XYZBank",collection:"onboarding",filter:{applicationNumber:ApplNoLabel_1.Text,
+                  passportNumber:Blank()},update:{'$set'{firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),DateOfBirth:DOB_1.Text,
+                  passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
+
+                  Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel_1});
+                  );
+
+
+         
      7. If the application was already submitten, then it should be non editable. 
       
          <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
