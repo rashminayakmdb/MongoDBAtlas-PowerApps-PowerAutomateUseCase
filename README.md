@@ -178,7 +178,22 @@
             - Click on the Button created→ choose OnSelect Option → Add this function:
 
                   Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
-         
+                  
+            - We also need a popup window to stop the user if he is trying to Submit without entering all the details.
+              - Click the form(anywere on the screen)-> Under the Advanced-> Action -> OnVisible, Add 
+                  
+                     Set(popup,false)
+                     
+              - Click on the '+' Button on the left panel. Add a Rectangle. Adjust the size, color, border.
+              - Inside the Rectangle add a Label and add the below line under text Property :
+              
+                  "Please fill in all details and Upload your passport as a pdf before clicking on Submit"
+              - Inside the Rectangle add a button. Click on the Button created→ choose OnSelect Option → Add this function:
+              
+                     Set(popup,false)
+                     
+              - Choose these 3(Rectangle+Label+Button) on the left panel, right click and group them
+              
      3. Saving the form should display us saved successfully message on screen.
          
          <img width="350" alt="Save Success" src="https://user-images.githubusercontent.com/101181433/196110685-ff4aae02-5102-4047-8b7f-d8da189559af.png">
@@ -232,7 +247,7 @@
          <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
          - Create a New Screen.
-           - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.
+           - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application Screen.
            - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
            
                   varFormData.document.firstname
