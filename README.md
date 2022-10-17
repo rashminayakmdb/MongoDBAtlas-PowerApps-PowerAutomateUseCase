@@ -119,12 +119,34 @@
                  - Filestoprocess →  Folder name in Blob Storage
                  - Concatenate(Passport.Text,".pdf") →  File name( I chose it to be the Passport number entered by the user in the TextInput we created earlier)
                  - Upload.Media → For Uploading the file.
+                 
+          - ### Save Button:
+            - Click on Insert → Button. Edit the text to “Submit”.
+            - Click on the Button created→ choose OnSelect Option → Add this function: 
+            
+                     MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",
+                     {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document{firstname:Upper(Fname.Text),
+                     lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,
+                     emailId:email.Text,applicationNumber:ApplNoLabel}});
+                     
+                     Navigate('Save success',ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
+
           - ### Submit Button:
             - Click on Insert → Button. Edit the text to “Submit”.
             - Click on the Button created→ choose OnSelect Option → Add this function: 
 
-                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text}});
-                    Navigate(Screen2,ScreenTransition.Fade);
+                    If(IsBlank(Fname.Text) Or IsBlank(Lname.Text) Or IsBlank(DOB.Text) Or IsBlank(Passport.Text) Or IsBlank(email.Text) Or IsEmpty(collectTemp.FN),
+Set(popup,true),
+UpdateContext({_deleteFile:AzureBlobStorage.GetFileMetadataByPathV2("csg10032001f02ad0eb",Concatenate("documents/",Passport.Text,".pdf")).Id});
+AzureBlobStorage.CopyFile(Concatenate("documents/",Passport.Text,".pdf"),Concatenate("filestoprocess/",Passport.Text,".pdf"),{overwrite:true});
+AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
+
+MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:{firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel.Text}});
+
+Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
+);
+
+
 
          - ### Reset Button:
            - Click on Insert → Button. Edit the text to “Submit”.
