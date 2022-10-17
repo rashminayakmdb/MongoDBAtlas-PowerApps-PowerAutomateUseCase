@@ -205,6 +205,27 @@
       
          <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
          
+         - Create a New Screen.
+           - Add a label and text field as shown in the screenshot. Close Button should navigate to the Welcome Screen just like we did for previous screens.
+           - Add a Submit button. Click on the Button created→ choose OnSelect Option → Add this function:  
+                  
+                  If(Or(IsBlank(ApplNoEntered.Text),!IsNumeric(ApplNoEntered.Text)),Set(popup,true),
+
+                  UpdateContext({varFormData:MongoDB.FindDocument("Content-Type","Access-Control-Request-headers","api-key",
+                  "Accept",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",
+                  filter:{_id:Blank(),applicationNumber:ApplNoEntered.Text}})});
+
+
+                  If(IsBlank(varFormData.document.applicationNumber), 
+                  Set(popup,true),
+                  If(Or(varFormData.document.status= "Valid",varFormData.document.status= "Invalid"),
+                  Navigate('View Submitted Form',ScreenTransition.Fade,{varFormData:varFormData}),
+                  Navigate('Edit Form',ScreenTransition.Fade,{varFormData:varFormData})
+
+                  );
+                  );
+                  );
+         
      6. If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
       
          <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
