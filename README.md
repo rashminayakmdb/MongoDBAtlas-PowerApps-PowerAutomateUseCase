@@ -1,4 +1,4 @@
-# MongoDB+ Microsoft PowerApps/PowerAutomateUseCase
+# MongoDB Atlas + Microsoft PowerApps/PowerAutomateUseCase
 
 ## Description
 
@@ -58,35 +58,8 @@
 
 
   - Change the name of the connector as per your choice
-  - Toggle the “Swagger Editor” button which will show the swagger code for the connector.We have to do InsertOne and FindOne operation as part of the use case and we would need the parameters to be set here in the swagger file for the app to pick them directly from the connector.
-      - ### InsertOne:  
-        - In the swagger file, go to /action/insertOne path.
-        - Under Schema →properties→ document→ properties, replace the name and age properties with the below:
-
-                 _id: {type: string, description: _id, title: PassportNumber}
-                 firstname: {type: string, description: firstname, title: firstname}
-                 lastname: {type: string, description: lastname, title: lastname}
-                 DateOfBirth: {type: string, format: date, description: DateOfBirth,title: DateOfBirth}
-                 passportNumber: {type: string, description: passportNumber, title:passportNumber}
-                 emailId: {type: string, description: emailId, title: emailId}
-
-
-     
-          It should look like this after update:
-         
-          <img width="490" alt="InsertOne" src="https://user-images.githubusercontent.com/101181433/185377082-554db411-db96-4d8d-b45f-19e66c9742a0.png">
-
-
-      - ### FindOne:
-         - In the swagger file, go To /action/findOne path
-         - Under Schema →properties→ filter→ properties, replace the name property with the below:
-            
-                  _id: {type: string, description: PassportNumber}	
-
-           It should look like this after update:
-           
-         - <img width="512" alt="FindOne" src="https://user-images.githubusercontent.com/101181433/185377096-6f5bf616-440c-4769-a33d-ee405eeaaa96.png">
-
+  - Toggle the “Swagger Editor” button which will show the swagger code for the connector. Replace the swagger file content with the MongoDBDataAPI.swagger.
+      
    - Update the connector.
    - Go to Test Tab → New Connection. Enter the private API Key created in Generate an API key step.
    
