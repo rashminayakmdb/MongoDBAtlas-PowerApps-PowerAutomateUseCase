@@ -230,7 +230,7 @@
        <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
          
      
-     ### 5. Fetch Application Screen:
+     ### 5. Fetch Application:
      If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
      <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
@@ -302,7 +302,7 @@
                   );
 
 
-     ### 7. View Submitted Application Screen:    
+     ### 7. View Submitted Application:    
      If the application was already submitten, then it should be non editable. 
       
      <img width="300" alt="Already Submiited Form" src="https://user-images.githubusercontent.com/101181433/196111714-33a96843-d23b-408a-b56c-1526733e9f31.png">
