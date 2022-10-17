@@ -101,7 +101,7 @@
             
                   Navigate(GetApplicationNumber,ScreenTransition.Fade);
          
-     ### 2. New Application Screen: 
+     ### 2. New Application: 
      
      Clicking on New Application takes us to the below form to fill all the details.
          
@@ -230,7 +230,7 @@
        <img width="350" alt="Submit success" src="https://user-images.githubusercontent.com/101181433/196110682-81401e95-84c5-4939-aa76-f53354fee932.png">
          
      
-     ### 5. Fetch Application:
+     ### 5. Fetch Existing Application:
      If user chooses to open the existing form, it should ask the user to enter the Application Number.
       
      <img width="300" alt="Enter Application Number" src="https://user-images.githubusercontent.com/101181433/196111704-e2e9e42b-b9cf-43fe-a362-d0fb1a1e3d76.png">
@@ -256,13 +256,13 @@
                   );
                   );
      
-     ### 6. Edit Application Screen:
+     ### 6. Edit Application:
      If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
       
      <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
      - Create a New Screen.
-     - Use the similar setup like the New Application Screen. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application Screen.
+     - Use the similar setup like the New Application. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application.
      - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
            
                   varFormData.document.firstname
