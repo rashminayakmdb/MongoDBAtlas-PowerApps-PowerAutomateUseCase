@@ -14,7 +14,7 @@
 
 #### 1: [MongoDB Cluster Setup](#mongodb-cluster-setup)
 #### 2: [Create a Blob Storage](#create-a-blob-storage)
-#### 3: [Connect to MongoDB Standard connector](#connect-to-mongodb-standard-connector)
+#### 3: [Connect to MongoDB Custom connector](#connect-to-mongodb-custom-connector)
 #### 4: [Build Power Apps Onboarding form](#build-power-apps-onboarding-form)
 #### 5: [Build Power Automate Flow](#build-power-automate-flow)
 
