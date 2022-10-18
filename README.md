@@ -126,7 +126,8 @@
             - Click on Insert → Media → Add Picture. Edit the text to “Upload”.
             - Click on the Media Button created→ choose OnSelect Option → Add this function: 
             
-                  Set(varAzureFile,AzureBlobStorage.CreateFile("documents",Concatenate(Passport.Text,".pdf"),Upload.Media));
+                  Set(varAzureFile,AzureBlobStorage.CreateFile("documents",
+                  Concatenate(Passport.Text,".pdf"),Upload.Media));
                   Collect(collectTemp,{FN:Upload.FileName,FL:"[Url of your blob storage container 
                   Eg: https://mystorageaccountname.blob.core.windows.net]" & varAzureFile.Path,FID:varAzureFile.Id});
                     
