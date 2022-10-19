@@ -369,13 +369,13 @@
      - Step 8:
         - Type Condition.Choose a Value -> Add each field of the Parse JSON output and compare with the AI Model output(Extract information from Identity Documents)
         
-            <img width="300" alt="Step8" src="https://user-images.githubusercontent.com/101181433/185534838-c1b96dbc-81b7-4eda-bf77-749d8b92bbad.png">
+            <img width="250" alt="Step8" src="https://user-images.githubusercontent.com/101181433/185534838-c1b96dbc-81b7-4eda-bf77-749d8b92bbad.png">
         
         - If Yes/No:
           - Add an Action → Type Gmail →Send email.
           - Add mail content as per your choice:
           
-            <img width="450" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
+            <img width="300" alt="Condition" src="https://user-images.githubusercontent.com/101181433/185534832-46ce904e-10e1-4925-aaab-0ab96a0ac951.png">
           
           - The status of the application has to stored back in MongoDB. Under each Action (Yes/No) add a "update document" after the "Send email" Action.For YES status should be "Valid" and for NO status should be "Invalid".
           
@@ -384,7 +384,7 @@
          
         This is the final look of of Power Automate Workflow:
         
-        <img width="300" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
+        <img width="250" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
         
 # Execution
   1. Click on the Application created in Power Apps.
