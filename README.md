@@ -54,7 +54,7 @@
   
 <img width="150" alt="Step1" src="https://user-images.githubusercontent.com/101181433/196114084-020ec9e7-183b-4a03-9900-a0278e1b1a9a.png">
 <img width="200" alt="Step2" src="https://user-images.githubusercontent.com/101181433/196098527-3a8cec52-7767-4ff8-8f46-8f42c2b28ba5.png">
-<img width="300" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196098530-1cfcdba9-4493-48a6-8e74-05cfe8323194.png">
+<img width="300" alt="Step3" src="https://user-images.githubusercontent.com/101181433/196664796-9299fc43-0eeb-4dbc-b118-920d635ef578.png">
 
 
   - Change the name of the connector as per your choice
