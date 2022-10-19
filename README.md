@@ -147,6 +147,8 @@
                       Remove(collectTemp,ThisItem);
                       AzureBlobStorage.DeleteFile(ThisItem.FID);
                       Reset(Upload);
+                      
+               <img width="200" alt="gallery" src="https://user-images.githubusercontent.com/101181433/196670006-36772b75-5c60-45bf-9a7c-409909d892bf.png">
                  
           - ### Save Button:
             - Click on Insert → Button. Edit the text to “Save”.
