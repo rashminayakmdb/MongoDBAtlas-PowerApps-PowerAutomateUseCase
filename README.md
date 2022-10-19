@@ -109,9 +109,8 @@
      <img width="350" alt="New Form" src="https://user-images.githubusercontent.com/101181433/196110393-8adc8484-fda6-48e6-8107-619bd9987569.png">
          
      - Create a New Screen.
-     - Heading and labels on the left. 
-      
-        - Click on Insert → Label and key in the name.
+        - Heading and labels on the left. 
+           - Click on Insert → Label and key in the name.
         - Input boxes on the right, 
            - Click on Insert → Text → Text Input.
            - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
