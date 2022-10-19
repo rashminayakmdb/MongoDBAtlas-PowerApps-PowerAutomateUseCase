@@ -117,7 +117,7 @@
            - For the Application Number, we need to show the random number generated in the Welcome Page. So add a label set the Text as "ApplnoNew"(which is the variable we are passing from the Welcome Screen)
             - Rename the Labels,TextInputs and Buttons as shown in the below screenshot. This will be easier to identify the fields for the actions/functions we write for Buttons.
             
-               <img width="173" alt="Labels" src="https://user-images.githubusercontent.com/101181433/185433291-6fb7f31a-1da5-4925-8e2d-f600ef3bdcd7.png">
+               <img width="200" alt="leftPanel" src="https://user-images.githubusercontent.com/101181433/196669611-cd2cd6b7-e983-423b-8bc2-a236e420b1a1.png">
 
            
          - ### Upload Button:
