@@ -391,10 +391,10 @@
   2. Enter the User Details in the form.
   3. Click on Save, wait for the Success Message.
   4. Click on Submit, It will popup a message saying "Please fill in all details and Upload your passport as a pdf before clicking on Submit". This is because all the fields and the document is a mandatory before the form is submitted.
-  5. Upload the Passport document.
+  5. Upload the Passport document.Go to Azure Blob Storage, documents container must have the file that is uploaded through the Power Apps.
   6. Click on Submit, wait for the Success Message.
   7. Go to the Atlas collection, there should be an entry made with the details entered in the form.
-  8. Go to Azure Blob Storage, it must have the file that is uploaded through the Power Apps.
+  8. Go to Azure Blob Storage, filestoprocess container must have the file copied from documents and also the file in documents container would be deleted by now.
   9. Go to Power Automate, Wait for the trigger to get started.(usually takes 1-2 minutes to start the flow).
   10. Wait for the flow to complete. If the form details matches with the uploaded document.You should receive a mail saying Validation is Successful. Else you should receive a Validation failure email.
 
