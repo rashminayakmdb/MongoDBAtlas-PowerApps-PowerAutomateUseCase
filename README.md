@@ -113,7 +113,7 @@
            - Click on Insert → Label and key in the name.
         - Input boxes on the right, 
            - Click on Insert → Text → Text Input.
-           - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text field. Similarly add Hint text to each of the Text Inputs.
+           - Click on the first Text Input box, go to properties and add “Please enter firstName as mentioned in your passport” in the Hint text property. Similarly add Hint text to each of the Text Inputs.
            - For the Application Number, we need to show the random number generated in the Welcome Page. So add a label set the Text as "ApplnoNew"(which is the variable we are passing from the Welcome Screen)
             - Rename the Labels,TextInputs and Buttons as shown in the below screenshot. This will be easier to identify the fields for the actions/functions we write for Buttons.
             
