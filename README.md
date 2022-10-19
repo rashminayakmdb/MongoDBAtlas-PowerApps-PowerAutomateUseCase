@@ -6,9 +6,9 @@
     
 ## Prerequisites
 
-  #### 1: Spin up a MongoDB Atlas cluster [here](https://account.mongodb.com/account/login)
-  #### 2: Get Azure subscription to store the files uploaded in Blob storage[here](https://azure.microsoft.com/en-in/free/)
-  #### 3: Get your Power Apps/Power Automate License [here](https://powerapps.microsoft.com/en-us/pricing/)
+  #### 1: Spin up a MongoDB Atlas cluster [Click here](https://account.mongodb.com/account/login)
+  #### 2: Azure subscription to store the files uploaded in Blob storage [Click here](https://azure.microsoft.com/en-in/free/)
+  #### 3: Power Apps/Power Automate License [Click here](https://powerapps.microsoft.com/en-us/pricing/)
 
 ## Below are the High level steps followed for the setup:
 
