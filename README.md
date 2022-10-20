@@ -401,9 +401,7 @@
 
 
 
-
-
-
+For any queries, Please contact partners@mongodb.com
 
 
 
