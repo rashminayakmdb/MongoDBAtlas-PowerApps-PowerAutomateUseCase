@@ -262,12 +262,12 @@
                   );
      
      ### 6. Edit Application:
-     If the application was saved ealier, then it should take the user to the Edit form page where the entries can be edited.
+     If the application was saved earlier, then it should take the user to the Edit form page where the entries can be edited.
       
      <img width="300" alt="Edit Form" src="https://user-images.githubusercontent.com/101181433/196112230-ab25fa11-467e-4fba-8fb7-f5874a26219d.png">
          
      - Create a New Screen.
-     - Use the similar setup like the New Application. Only changes are with the Save And Submit Button code as these should do a update to the already saved document.Add the Popup window as we did in the New Application.
+     - Use the similar setup like the New Application. Only changes are with the Save And Submit Button code as these should do a update to the already saved document. Add the Popup window as we did in the New Application.
      - Application number is the number the use enters. We are passing the varFormData collection from the previous page which has all the values retrieved from Database. So for every text Input and the Application Number, Add this under the Default property of the respective fields:
            
                   varFormData.document.firstname
@@ -382,7 +382,7 @@
           
             <img width="300" alt="PAutomate_UpdateStatus" src="https://user-images.githubusercontent.com/101181433/196105022-a73cee64-f9cd-46df-b127-30d5a5d74c54.png">
          
-        This is the final look of of Power Automate Workflow:
+        This is the final look of Power Automate Workflow:
         
         <img width="250" alt="Final" src="https://user-images.githubusercontent.com/101181433/185534822-c974d9bc-e8e5-453c-a343-a6c5f0721f44.png">
         
