@@ -6,6 +6,13 @@
 
 <img width="600" alt="Screenshot 2022-10-20 at 9 20 47 PM" src="https://user-images.githubusercontent.com/101181433/196997370-51d3fe0f-55bf-432c-a106-de570eba5cd9.png">
 
+  #### 1: User enters the details and submits the Onboarding Form .
+  #### 2: Entered information is inserted into MongoDB collection.
+  #### 3: Proof document uploaded in the form is stored in Azure Blob Storage and this will trigger a Power Automate Workflow.
+  #### 4: Power Automate workflow will validate the uploaded proof document with the details present in the MongoDB collection.
+  #### 5: Validation status is emailed to the user.
+  #### 6: MongoDB document is updated with the validation status. 
+
 ## Prerequisites
 
   #### 1: Spin up a MongoDB Atlas cluster [Click here](https://account.mongodb.com/account/login)
