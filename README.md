@@ -4,6 +4,8 @@
 
    #### This use-case shows how easily a front end for the Customer Onboarding can be developed using Power Apps and the back end process of validating the uploaded proofs can be automated and triggered in real-time using Power Automate and this entire application can seamlessly integrate with MongoDB Atlas which stores the details entered by user on the front-end and also stores the results of the validation.
 
+#### Below diagram depicts the workflow  and the components involved in the solution:
+
 <img width="700" alt="Screenshot 2022-10-20 at 9 20 47 PM" src="https://user-images.githubusercontent.com/101181433/196997370-51d3fe0f-55bf-432c-a106-de570eba5cd9.png">
 
   #### 1: User enters the details and submits the Onboarding Form .
