@@ -167,10 +167,10 @@
             - Click on Insert → Button. Edit the text to “Save”.
             - Click on the Button created→ choose OnSelect Option → Add this function: 
             
-                     MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",
-                     {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document{firstname:Upper(Fname.Text),
-                     lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,_id:Passport.Text,
-                     emailId:email.Text,applicationNumber:ApplNoLabel}});
+                     MongoDB.InsertDocument("Sandbox","XYZBank","onboarding",{document:
+                     {firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,
+                     passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel}});
+                
                      
                      Navigate('Save success',ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
 
@@ -188,10 +188,9 @@
                     
                     AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
 
-                    MongoDB.InsertDocument("Content-Type","Access-Control-Request-headers","api-key",      
-                    {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",document:
-                    {firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,
-                    _id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel.Text}});
+                    MongoDB.InsertDocument("Sandbox","XYZBank","onboarding",{document:
+                    {firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,
+                    passportNumber:Passport.Text,_id:Passport.Text,emailId:email.Text,applicationNumber:ApplNoLabel.Text}});
 
                     Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel});
                     );
@@ -257,9 +256,8 @@
                   
                   If(Or(IsBlank(ApplNoEntered.Text),!IsNumeric(ApplNoEntered.Text)),Set(popup,true),
 
-                  UpdateContext({varFormData:MongoDB.FindDocument("Content-Type","Access-Control-Request-headers","api-key",
-                  "Accept",{dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",
-                  filter:{_id:Blank(),applicationNumber:ApplNoEntered.Text}})});
+                  UpdateContext({varFormData:MongoDB.FindDocument("Sandbox","XYZBank","onboarding",
+                  {filter:{_id:Blank(),applicationNumber:ApplNoEntered.Text}})});
 
 
                   If(IsBlank(varFormData.document.applicationNumber), 
@@ -290,11 +288,9 @@
                   
      - Click on the Save Button created→ choose OnSelect Option → Add this function:
            
-                  MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",
-                  {dataSource:"Sandbox",database:"XYZBank",collection:"onboarding",filter:
-                  {applicationNumber:ApplNoLabel_1.Text,passportNumber:Blank()},update:{'$set':
-                  {firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),DateOfBirth:DOB_1.Text,
-                  passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
+                  MongoDB.UpdateDocument("Sandbox","XYZBank","onboarding",{filter:{applicationNumber:ApplNoLabel_1.Text,
+                  passportNumber:Blank()},update:{'$set':{firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),
+                  DateOfBirth:DOB_1.Text,passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
 
                   Navigate('Save success',ScreenTransition.Fade,{returnAppNumber:ApplNoLabel_1});
 
@@ -309,10 +305,9 @@
                   AzureBlobStorage.CopyFile(Concatenate("documents/",Passport_1.Text,".pdf"),Concatenate("filestoprocess/",Passport_1.Text,".pdf"));
                   AzureBlobStorage.DeleteFileV2("csg10032001f02ad0eb",_deleteFile);
 
-                  MongoDB.UpdateDocument("Content-Type","Access-Control-Request-headers","api-key",{dataSource:"Sandbox",
-                  database:"XYZBank",collection:"onboarding",filter:{applicationNumber:ApplNoLabel_1.Text,
-                  passportNumber:Blank()},update:{'$set'{firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),DateOfBirth:DOB_1.Text,
-                  passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
+                  MongoDB.UpdateDocument("Sandbox","XYZBank","onboarding",{filter:{applicationNumber:ApplNoLabel_1.Text,
+                  passportNumber:Blank()},update:{'$set':{firstname:Upper(Fname_1.Text),lastname:Upper(Lname_1.Text),
+                  DateOfBirth:DOB_1.Text,passportNumber:Passport_1.Text,emailId:email_1.Text,status:Blank()}}});
 
                   Navigate(Success,ScreenTransition.Fade,{returnAppNumber:ApplNoLabel_1});
                   );
