@@ -37,7 +37,7 @@
   - Log-on to Atlas account.
   
   - In the project's Security tab, choose to add a new user called main_user, for this user select Add Default Privileges and in the Default Privileges section add the roles readWriteAnyDatabase.
-  - Create a Sandbox Cluster in a cloud provider region of your choice with default settings.
+  - Create a Sandbox Cluster in a cloud provider region of your choice with default settings. Name the cluster as Sandbox for this setup as it will be used later in PowerApps/PowerAutomate code.
   - In the Security tab, add a new IP Whitelist for your laptop's current IP address
 ### B: Enable the Data API in Atlas
   - In the left-hand Deployment menu, click to navigate to Data API.
